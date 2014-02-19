@@ -1,0 +1,23 @@
+{
+  "name": "ngTimesheet",
+  "version": "0.0.1",
+  "authors": [
+    "Michael Pope <michael@dtcorp.com.au>"
+  ],
+  "description": "Keep track of your time and post it to a backend",
+  "main": "lib/timesheet.js",
+  "keywords": [
+    "timesheet"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-timer": "~1.0.12"
+  }
+}
