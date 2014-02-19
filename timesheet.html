@@ -1,7 +1,9 @@
 <timer interval="1000">{{hours}} hrs {{minutes}} mins {{seconds}} secs.</timer>
 
-<button ng-click="stopTimer()" ng-show="timerRunning">Stop</button>
-<button ng-click="startTimer()" ng-hide="timerRunning">Start</button>
+<span ng-hide="toPost">
+  <button ng-click="stopTimer()" ng-show="timerRunning">Stop</button>
+  <button ng-click="startTimer()" ng-hide="timerRunning">Start</button>
+</span>
 
 <div class="postTimesheet" ng-show="toPost">
   <input type="text" size="30" ng-model="message" />

@@ -23,7 +23,9 @@ myApp.directive('timesheet', function() {
 		  };
 
 		  $scope.postTimesheet = function(){
-			  console.log('Post ', this.message, ' to ', this.postUrl)
+			  timeStr = time.hours + 'hrs ' + time.minutes + 'mins ' + time.seconds + 'secs'
+			  console.log('Post \'', timeStr, ' ', this.message, '\' to: ', this.postUrl)
+			  $scope.toPost = false;
 		  }
 
 		  $scope.$on('timer-stopped', function (event, data){
