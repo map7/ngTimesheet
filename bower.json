@@ -10,10 +10,10 @@
 		"timesheet"
 	],
 	"homepage": "https://github.com/map7/ngTimesheet",
-	"repository": {
+	"repository": [
 		"type": "git",
 		"url": "https://github.com/map7/ngTimesheet"
-	},
+	],
 	"license": "MIT",
 	"ignore": [
 		"**/.*",
