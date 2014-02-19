@@ -1,8 +1,27 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['timer']);
 
 myApp.directive('timesheet', function() {
   return {
       restrict: 'E',
-      template: '<h1>Clock</h1>'
+      templateUrl: 'timesheet.html',
+	  controller: function($scope){
+		  $scope.timerRunning = true;
+		  
+		  $scope.startTimer = function(){
+			  $scope.$broadcast('timer-start');
+			  $scope.timerRunning = true;
+		  };
+
+		  $scope.stopTimer = function(){
+			  $scope.$broadcast('timer-stop');
+			  $scope.timerRunning = false;
+		  };
+
+		  $scope.$on('timer-stopped', function (event, data){
+			  console.log('Timer Stopped - data = ', data);
+		  });
+	  }
+
   };
 });
+
