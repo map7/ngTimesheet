@@ -7,6 +7,5 @@
 
 ** Install through Bower
 
-(Not yet registered)
-Currently you will have to clone this repo
+: bower install ng-timesheet
 
