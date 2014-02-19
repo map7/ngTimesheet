@@ -23,7 +23,6 @@ myApp.directive('timesheet', function() {
 		  };
 
 		  $scope.postTimesheet = function(){
-			  debugger
 			  console.log('Post ', this.message, ' to ', this.postUrl)
 		  }
 
