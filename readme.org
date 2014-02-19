@@ -1,0 +1,12 @@
+* ngTimesheet
+
+** Requirements
+
+- angular-timer
+- angular
+
+** Install through Bower
+
+(Not yet registered)
+Currently you will have to clone this repo
+
