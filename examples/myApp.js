@@ -1,1 +1,1 @@
-var myApp = angular.module('myApp', ['timer']);
+var myApp = angular.module('myApp', ['timesheet']);
