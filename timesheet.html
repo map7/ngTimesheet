@@ -2,3 +2,8 @@
 
 <button ng-click="stopTimer()" ng-show="timerRunning">Stop</button>
 <button ng-click="startTimer()" ng-hide="timerRunning">Start</button>
+
+<div class="postTimesheet" ng-show="toPost">
+  <input type="text" size="30" ng-model="message" />
+  <button ng-click="postTimesheet()">Post</button>
+</div>
