@@ -9,3 +9,10 @@
 
 : bower install ng-timesheet
 
+** Run tests
+
+Run unit tests
+: gulp test
+
+Run E2E tests
+: gulp teste2e
