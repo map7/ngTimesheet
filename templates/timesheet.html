@@ -1,13 +1,13 @@
 <timer interval="1000">{{hours}} hrs {{minutes}} mins {{seconds}} secs.</timer>
 
 <span ng-hide="toPost">
-  <button ng-click="stopTimer()" ng-show="timerRunning">Stop</button>
-  <button ng-click="startTimer()" ng-hide="timerRunning">Start</button>
+  <button id="stop" ng-click="stopTimer()" ng-show="timerRunning">Stop</button>
+  <button id="start" ng-click="startTimer()" ng-hide="timerRunning">Start</button>
 </span>
 
 <div class="postTimesheet" ng-show="toPost">
   <form>
-	<input type="text" size="30" ng-model="message" />
-	<button type="submit" ng-click="postTimesheet()">Post</button>
+	<input id="message" type="text" size="30" ng-model="message" />
+	<button id="post" type="submit" ng-click="postTimesheet()">Post</button>
   </form>
 </div>
