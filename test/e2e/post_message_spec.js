@@ -8,4 +8,21 @@ describe('Post timesheet', function(){
 		expect(element('#message:visible').count()).toBe(1) // Message should be visible
 	});
 
+	it("after post message should vanish", function(){
+		browser().navigateTo('/examples/directive.html')
+		element('#stop').click();
+		expect(element('#message:visible').count()).toBe(1)
+		element('#post').click();
+		expect(element('#message:visible').count()).toBe(0)
+	});
+
+	it("post should send data to backend", function(){
+		browser().navigateTo('/examples/directive.html')
+		element('#stop').click();
+		element('#post').click();
+		// TODO Test sending json to the backend here.
+	});
+
+	
+
 });
