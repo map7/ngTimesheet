@@ -9,6 +9,13 @@
 
 : bower install ng-timesheet
 
+** Setup development
+
+Clone this git repo and install dependencies 
+: bower install
+
+Now run the tests below
+
 ** Run tests
 
 Run unit tests
